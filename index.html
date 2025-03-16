@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Profile Section -->
-  <section id="profile">
-    <div class="profile-container">
-      <img src="images/profile-picture.jpg" alt="Profile Picture" class="profile-pic">
-      <div class="profile-info">
-        <h1>Your Name</h1>
-        <p>Brief introduction or tagline.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">Your Name</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Detailed description about your background, experience, and interests.</p>
-  </section>
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Your Name</span></h1>
+                <p>Web Developer & Designer</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Tools I Work With -->
-  <section id="tools">
-    <h2>Tools I Work With</h2>
-    <div class="tool-logos">
-      <img src="images/tool1-logo.png" alt="Tool 1">
-      <img src="images/tool2-logo.png" alt="Tool 2">
-      <!-- Add more tool logos as needed -->
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/images/profile.jpg" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <p>Add your about me text here...</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-items">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Technical Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skill">
-      <p>Skill 1</p>
-      <div class="progress-bar">
-        <div class="progress" style="width: 80%;"></div>
-      </div>
-    </div>
-    <!-- Repeat for other skills -->
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Repeat this block for each project -->
+                <div class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Project 1">
+                    <h3>Project Title</h3>
+                    <p>Project description goes here.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Title</h3>
-      <p>Brief overview of the project.</p>
-      <button onclick="toggleDetails('project1-details')">Learn More</button>
-      <div id="project1-details" class="project-details">
-        <p>Extended description of the project.</p>
-        <img src="images/project1-screenshot.jpg" alt="Project Screenshot">
-        <!-- Embed video if available -->
-      </div>
-    </div>
-    <!-- Repeat for other projects -->
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates">
-    <h2>Certificates</h2>
-    <div class="certificate">
-      <img src="images/certificate1.jpg" alt="Certificate 1">
-    </div>
-    <!-- Repeat for other certificates -->
-  </section>
-
-  <!-- Contact Information -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-    <p>Phone: +1234567890</p>
-  </section>
-
-  <!-- Resume Download Button -->
-  <section id="resume">
-    <a href="documents/resume.pdf" download>
-      <button>Download My Resume</button>
-    </a>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

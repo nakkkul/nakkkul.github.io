@@ -4,45 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nakul Kumar - Data Science Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Fixed Sidebar Navigation -->
   <nav>
-    <div class="container">
-      <a href="#home" class="logo">Nakul Kumar</a>
+    <div class="nav-container">
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#tech-stack">Tech Stack</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#home" data-section="home">
+            <i class="fas fa-home"></i>
+            <span class="nav-text">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" data-section="about">
+            <i class="fas fa-user"></i>
+            <span class="nav-text">ABOUT</span>
+          </a>
+        </li>
+        <li>
+          <a href="#tech-stack" data-section="tech-stack">
+            <i class="fas fa-cogs"></i>
+            <span class="nav-text">TECHNICAL STACK</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" data-section="projects">
+            <i class="fas fa-briefcase"></i>
+            <span class="nav-text">PROJECTS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#certificates" data-section="certificates">
+            <i class="fas fa-certificate"></i>
+            <span class="nav-text">CERTIFICATES</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span class="nav-text">CONTACT</span>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Home Section with Sky Blue Overlay -->
-  <section id="home" class="home">
-    <div class="overlay"></div>
+  <!-- Home Section -->
+  <section id="home" class="home reveal">
     <div class="container home-content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Data Science Professional</p>
-    </div>
-  </section>
-
-  <!-- Profile Picture Section -->
-  <section id="profile" class="profile">
-    <div class="container">
-      <img src="assets/images/mypic.jpg" alt="Profile Picture" class="profile-pic" />
+      <div class="home-left">
+        <img src="assets/images/mypic.jpg" alt="Profile Picture" class="home-profile">
+      </div>
+      <div class="home-right">
+        <!-- The name is absolutely centered within .home-right -->
+        <div class="home-name">Nakul Kumar</div>
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about" class="about reveal">
     <div class="container">
-      <h2>About Me</h2>
+      <h2>ABOUT</h2>
       <p>
         I am a data science professional with 3+ years of Python experience, specializing in machine learning, deep learning, and natural language processing. I have built 15+ projects focused on predictive modeling, automation, and optimization to solve real-world challenges. With expertise in NLP, data analysis, and data visualization, I have applied advanced analytical techniques to uncover trends, optimize processes, and improve model performance. Additionally, I have managed and worked on 500+ complex survey projects, collaborating with cross-functional teams to streamline data processes and build efficient solutions. My passion lies in leveraging data science to uncover patterns, improve efficiency, and drive innovation.
       </p>
@@ -50,22 +79,32 @@
   </section>
 
   <!-- Tools I Work With Section -->
-  <section id="tools" class="tools">
+  <section id="tools" class="tools reveal">
     <div class="container">
-      <h2>Tools I Work with</h2>
+      <h2>TOOLS I WORK WITH</h2>
       <img src="assets/images/tools.jpg" alt="Tools I Work With" class="tools-image" />
     </div>
   </section>
 
   <!-- Technical Stack Section -->
-  <section id="tech-stack" class="tech-stack">
+  <section id="tech-stack" class="tech-stack reveal">
     <div class="container">
-      <h2>Technical Stack</h2>
+      <h2>TECHNICAL STACK</h2>
       <div class="skills-container">
         <div class="skill-item">
           <div class="skill-info">
-            <span>Python: Pandas, NumPy, Scikit-learn, TensorFlow</span>
-            <span>80%</span>
+            <span class="skill-text">Python: Pandas, NumPy, Scikit-learn, TensorFlow</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+        <!-- Additional skill items follow similarly -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-text">Machine Learning</span>
+            <span class="skill-percent">80%</span>
           </div>
           <div class="progress-bar">
             <div class="progress" style="width: 80%;"></div>
@@ -73,17 +112,8 @@
         </div>
         <div class="skill-item">
           <div class="skill-info">
-            <span>Machine Learning</span>
-            <span>80%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Deep Learning</span>
-            <span>70%</span>
+            <span class="skill-text">Deep Learning</span>
+            <span class="skill-percent">70%</span>
           </div>
           <div class="progress-bar">
             <div class="progress" style="width: 70%;"></div>
@@ -91,8 +121,8 @@
         </div>
         <div class="skill-item">
           <div class="skill-info">
-            <span>Data Analysis</span>
-            <span>80%</span>
+            <span class="skill-text">Data Analysis</span>
+            <span class="skill-percent">80%</span>
           </div>
           <div class="progress-bar">
             <div class="progress" style="width: 80%;"></div>
@@ -100,8 +130,8 @@
         </div>
         <div class="skill-item">
           <div class="skill-info">
-            <span>Natural Language Processing</span>
-            <span>70%</span>
+            <span class="skill-text">Natural Language Processing</span>
+            <span class="skill-percent">70%</span>
           </div>
           <div class="progress-bar">
             <div class="progress" style="width: 70%;"></div>
@@ -109,8 +139,8 @@
         </div>
         <div class="skill-item">
           <div class="skill-info">
-            <span>SQL</span>
-            <span>60%</span>
+            <span class="skill-text">SQL</span>
+            <span class="skill-percent">60%</span>
           </div>
           <div class="progress-bar">
             <div class="progress" style="width: 60%;"></div>
@@ -118,8 +148,8 @@
         </div>
         <div class="skill-item">
           <div class="skill-info">
-            <span>Tools: Jupyter Notebook, VS Code, MySQL, Git</span>
-            <span>75%</span>
+            <span class="skill-text">Tools: Jupyter Notebook, VS Code, MySQL, Git</span>
+            <span class="skill-percent">75%</span>
           </div>
           <div class="progress-bar">
             <div class="progress" style="width: 75%;"></div>
@@ -129,10 +159,10 @@
     </div>
   </section>
 
-  <!-- Projects Section (6 Projects in 2 Rows x 3 Columns) -->
-  <section id="projects" class="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="projects reveal">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>PROJECTS</h2>
       <div class="project-grid">
         <!-- Project Card 1 -->
         <div class="project-card">
@@ -159,7 +189,7 @@
         <div class="project-card">
           <img src="assets/images/nltlogo1.png" alt="NLP Sentiment Analysis" class="project-logo" />
           <h3>Sentiment Analysis with NLP</h3>
-          <p>Analyzing sentiments from text data using NLP techniques...</p>
+          <p>Analyzing sentiments from text data using NLP...</p>
           <button class="btn view-more" data-project="4">View More</button>
         </div>
         <!-- Project Card 5 -->
@@ -180,13 +210,15 @@
     </div>
   </section>
 
-  <!-- Project Modal (Two Column Layout) -->
+  <!-- Project Modal with Fixed Header -->
   <div id="project-modal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="modal-body">
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body" id="modal-body">
         <div class="modal-text">
-          <h2 id="modal-title"></h2>
           <p id="modal-description"></p>
         </div>
         <div class="modal-image-container">
@@ -197,9 +229,9 @@
   </div>
 
   <!-- Certificates Section -->
-  <section id="certificates" class="certificates">
+  <section id="certificates" class="certificates reveal">
     <div class="container">
-      <h2>Certificates</h2>
+      <h2>CERTIFICATES</h2>
       <div class="certificates-grid">
         <div class="certificate-item">
           <img src="assets/images/certificates/Complete Machine Learning, NLP Bootcamp_page-0001.jpg" alt="Certificate 1" />
@@ -213,17 +245,14 @@
         <div class="certificate-item">
           <img src="assets/images/certificates/sql_basic certificate_page-0001.jpg" alt="Certificate 4" />
         </div>
-        <div class="certificate-item">
-          <img src="assets/images/certificates/Udemy Python Certificate_page-0001.jpg" alt="Certificate 5" />
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section (Large Icons) -->
-  <section id="contact" class="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact reveal">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>CONTACT</h2>
       <div class="contact-icons">
         <a href="mailto:kumar.nakul111@gmail.com" target="_blank" class="contact-icon">
           <i class="fas fa-envelope"></i>
@@ -235,8 +264,22 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
+      <div class="resume-download">
+        <h3>DOWNLOAD MY RESUME HERE</h3>
+        <a href="https://github.com/nakkkul/nakkkul.github.io/blob/main/Nakul%20Kumar.pdf" target="_blank" class="btn resume-btn">
+          Resume <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>Nakul Kumar<br>Data Scientist</p>
+      <p>© Copyright Nakul K. All Rights Reserved<br>Designed by BootstrapMade</p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

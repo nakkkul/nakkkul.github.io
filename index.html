@@ -22,32 +22,45 @@
         </div>
     </nav>
 
-    <!-- Home Section (Keep same as before) -->
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Data Scientist | Machine Learning Enthusiast | AI Researcher</p>
+        </div>
+    </section>
 
-    <!-- About Section (Keep same as before) -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Nakul Kumar, a passionate data scientist with expertise in machine learning, deep learning, and data analysis. I enjoy transforming data into actionable insights and building models that solve real-world problems.</p>
+        </div>
+    </section>
 
     <!-- Tech Stack Section -->
     <section id="tech-stack" class="tech-stack">
         <div class="container">
             <h2>Technical Stack</h2>
             <div class="skills-container">
+                <!-- Skill Item -->
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>Python: Pandas, NumPy, Scikit-learn, TensorFlow</span>
                         <span>80%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
+                        <div class="progress" style="width: 80%;"></div>
                     </div>
                 </div>
-                <!-- Add other skills following same structure -->
+                <!-- Repeat similar blocks for other skills -->
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>Machine Learning</span>
                         <span>80%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
+                        <div class="progress" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -56,7 +69,7 @@
                         <span>70%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 70%"></div>
+                        <div class="progress" style="width: 70%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -65,7 +78,7 @@
                         <span>80%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
+                        <div class="progress" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -74,7 +87,7 @@
                         <span>70%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 70%"></div>
+                        <div class="progress" style="width: 70%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -83,7 +96,7 @@
                         <span>60%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 60%"></div>
+                        <div class="progress" style="width: 60%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -92,14 +105,14 @@
                         <span>75%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 75%"></div>
+                        <div class="progress" style="width: 75%;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Updated Projects Section with Modals -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>My Projects</h2>
@@ -112,58 +125,24 @@
                     <button class="btn view-more" data-project="1">View More</button>
                 </div>
                 <!-- Add other project cards similarly -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Modals -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modal-image" src="" alt="Project Image">
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-            <a id="github-link" href="#" target="_blank" class="btn">View on GitHub</a>
-        </div>
-    </div>
-
-    <!-- Certificates Section (5 items) -->
-    <section id="certificates" class="certificates">
-        <div class="container">
-            <h2>Certificates</h2>
-            <div class="certificates-grid">
-                <!-- 5 certificate items -->
-                <div class="certificate-item">
-                    <img src="assets/images/cert1.jpg" alt="Certificate 1">
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="assets/images/resale-prediction.jpg" alt="Resale Prediction">
+                    <h3>Vehicle Resale Value Prediction</h3>
+                    <p>Predicting resale values using machine learning...</p>
+                    <button class="btn view-more" data-project="2">View More</button>
                 </div>
-                <!-- Add 4 more certificate items -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Updated Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>kumar.nakul111@gmail.com</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/nakkkul" target="_blank" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nakkkul/" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="assets/images/subscription-prediction.jpg" alt="Subscription Prediction">
+                    <h3>Subscription Renewal Prediction</h3>
+                    <p>Forecasting subscription renewals with ML models...</p>
+                    <button class="btn view-more" data-project="3">View More</button>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <img src="assets/images/nlp-sentiment.jpg" alt="NLP Sentiment Analysis">
+                    <h3>Sentiment Analysis with NLP</h3>
+                    <p>Analyzing sentiments from text
+::contentReference[oaicite:0]{index=0}
+ 

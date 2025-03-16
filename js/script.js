@@ -6,37 +6,37 @@ const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
 
-// Define project details for 6 projects
+// Define project details for 6 projects with separate screenshot images
 const projects = {
   1: {
     title: 'Intelligent Car Brand Classification',
     description: 'A deep learning system that accurately classifies car brands using convolutional neural networks and transfer learning techniques. The model is deployed to recognize vehicle logos from images in real time.',
-    image: 'assets/images/carlogo.jpg'
+    screenshot: 'assets/images/screenshots/car_screenshot.jpg'
   },
   2: {
     title: 'Vehicle Resale Value Prediction',
     description: 'A predictive model using machine learning algorithms to forecast the resale value of vehicles based on historical data and market trends.',
-    image: 'assets/images/resalelogo.png'
+    screenshot: 'assets/images/screenshots/resale_screenshot.png'
   },
   3: {
     title: 'Subscription Renewal Prediction',
     description: 'An ML-based solution that predicts customer subscription renewals, enabling proactive engagement and improved customer retention.',
-    image: 'assets/images/predictlogo.png'
+    screenshot: 'assets/images/screenshots/predict_screenshot.png'
   },
   4: {
     title: 'Sentiment Analysis with NLP',
     description: 'A natural language processing application that analyzes text data to determine sentiment polarity and overall public opinion.',
-    image: 'assets/images/nltlogo1.png'
+    screenshot: 'assets/images/screenshots/nlp_screenshot.png'
   },
   5: {
     title: 'HR Analytics Dashboard',
     description: 'A comprehensive dashboard that visualizes HR data and provides actionable insights for optimizing workforce management.',
-    image: 'assets/images/bilogo.png'
+    screenshot: 'assets/images/screenshots/hr_screenshot.png'
   },
   6: {
     title: 'Ecommerce Analytics',
     description: 'An analytics solution designed to monitor ecommerce performance, providing key insights and visualizations to drive business strategy.',
-    image: 'assets/images/bilogo1.png'
+    screenshot: 'assets/images/screenshots/ecommerce_screenshot.png'
   }
 };
 
@@ -48,7 +48,7 @@ viewMoreButtons.forEach(button => {
     if (project) {
       modalTitle.textContent = project.title;
       modalDescription.textContent = project.description;
-      modalImage.src = project.image;
+      modalImage.src = project.screenshot;
       modal.style.display = 'block';
     }
   });

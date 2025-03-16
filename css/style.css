@@ -1,37 +1,180 @@
-/* Add these new styles */
-.tech-stack {
-    background: #f8f9fa;
-}
-
-.skills-container {
-    margin-top: 2rem;
-}
-
-.skill-item {
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f0f8ff; /* Light sky blue */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  /* Navigation */
+  nav {
+    background: #87ceeb; /* Sky blue */
+    padding: 1rem 0;
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  nav .nav-links li {
+    margin-left: 1.5rem;
+  }
+  nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  nav .nav-links a:hover {
+    color: #000;
+  }
+  
+  /* Home Section */
+  .home {
+    background: url('../assets/images/profile.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  .home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .home p {
+    font-size: 1.2rem;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 3rem 0;
+    background: #fff;
+  }
+  .about h2 {
+    text-align: center;
     margin-bottom: 1.5rem;
-}
-
-.skill-info {
+  }
+  .about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Tech Stack Section */
+  .tech-stack {
+    background: #f8f9fa;
+    padding: 3rem 0;
+  }
+  .tech-stack h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .skills-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  .skill-item {
+    margin-bottom: 1.5rem;
+  }
+  .skill-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-}
-
-.progress-bar {
+    font-weight: bold;
+  }
+  .progress-bar {
     background: #e9ecef;
     height: 10px;
     border-radius: 5px;
     overflow: hidden;
-}
-
-.progress {
-    background: var(--primary-color);
+  }
+  .progress {
+    background: #28a745; /* Green progress */
     height: 100%;
     transition: width 0.5s ease;
-}
-
-/* Modal Styles */
-.modal {
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 3rem 0;
+    background: #fff;
+  }
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  .project-card p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background: #87ceeb;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #00aaff;
+  }
+  
+  /* Modal Styles */
+  .modal {
     display: none;
     position: fixed;
     top: 0;
@@ -40,49 +183,96 @@
     height: 100%;
     background: rgba(0,0,0,0.8);
     z-index: 1001;
-}
-
-.modal-content {
-    background: white;
+  }
+  .modal-content {
+    background: #fff;
     padding: 2rem;
     width: 80%;
     max-width: 800px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 5% auto;
     border-radius: 10px;
-}
-
-.close {
+    position: relative;
+  }
+  .modal-content img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .close {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    top: 10px;
+    right: 20px;
     font-size: 2rem;
     cursor: pointer;
-}
-
-/* Updated Contact Section */
-.contact {
+  }
+  
+  /* Certificates Section */
+  .certificates {
+    padding: 3rem 0;
+    background: #f8f9fa;
+  }
+  .certificates h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .certificate-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 3rem 0;
     background: #2c3e50;
-    color: white;
-}
-
-.contact-item {
+    color: #fff;
+  }
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact-content {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  .contact-item {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
-}
-
-.social-icon {
+    font-size: 1.1rem;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .social-icon {
     font-size: 2rem;
-    color: white;
+    color: #fff;
     transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-    color: var(--primary-color);
-}
-
-/* Add other existing styles from previous version */
+  }
+  .social-icon:hover {
+    color: #87ceeb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .home h1 {
+      font-size: 2.5rem;
+    }
+  }
+  

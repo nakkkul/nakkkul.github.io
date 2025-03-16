@@ -23,15 +23,23 @@
     </div>
   </nav>
 
-  <!-- Home Section -->
+  <!-- Home Section with overlay -->
   <section id="home" class="home">
-    <div class="container">
+    <div class="overlay"></div>
+    <div class="container home-content">
       <h1>Welcome to My Portfolio</h1>
       <p>Data Science Professional</p>
     </div>
   </section>
 
-  <!-- About Section (Keep same as before) -->
+  <!-- Profile Picture Section -->
+  <section id="profile" class="profile">
+    <div class="container">
+      <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+    </div>
+  </section>
+
+  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
@@ -111,47 +119,53 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects Section (6 Projects in 2 Rows x 3 Columns) -->
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
+        <!-- Project Card 1 -->
         <div class="project-card">
-          <img src="assets/images/carlogo.jpg" alt="Car Classification" />
+          <img src="assets/images/carlogo.jpg" alt="Car Classification" class="project-logo" />
           <h3>Intelligent Car Brand Classification</h3>
           <p>Deep learning system for vehicle brand recognition...</p>
           <button class="btn view-more" data-project="1">View More</button>
         </div>
+        <!-- Project Card 2 -->
         <div class="project-card">
-          <img src="assets/images/resalelogo.png" alt="Resale Prediction" />
+          <img src="assets/images/resalelogo.png" alt="Resale Prediction" class="project-logo" />
           <h3>Vehicle Resale Value Prediction</h3>
           <p>Predicting resale values using machine learning...</p>
           <button class="btn view-more" data-project="2">View More</button>
         </div>
+        <!-- Project Card 3 -->
         <div class="project-card">
-          <img src="assets/images/predictlogo.png" alt="Subscription Prediction" />
+          <img src="assets/images/predictlogo.png" alt="Subscription Prediction" class="project-logo" />
           <h3>Subscription Renewal Prediction</h3>
           <p>Forecasting subscription renewals with ML models...</p>
           <button class="btn view-more" data-project="3">View More</button>
         </div>
+        <!-- Project Card 4 -->
         <div class="project-card">
-          <img src="assets/images/nltlogo1.png" alt="NLP Sentiment Analysis" />
+          <img src="assets/images/nltlogo1.png" alt="NLP Sentiment Analysis" class="project-logo" />
           <h3>Sentiment Analysis with NLP</h3>
           <p>Analyzing sentiments from text data using NLP techniques...</p>
           <button class="btn view-more" data-project="4">View More</button>
         </div>
+        <!-- Project Card 5 -->
         <div class="project-card">
-            <img src="assets/images/bilogo.png" alt="HR Analytics" />
-            <h3>Sentiment Analysis with NLP</h3>
-            <p>Analyzing sentiments from text data using NLP techniques...</p>
-            <button class="btn view-more" data-project="4">View More</button>
-          </div>
-          <div class="project-card">
-            <img src="assets/images/bilogo1.png" alt="Ecommerce Analytics" />
-            <h3>Sentiment Analysis with NLP</h3>
-            <p>Analyzing sentiments from text data using NLP techniques...</p>
-            <button class="btn view-more" data-project="4">View More</button>
-          </div>
+          <img src="assets/images/bilogo.png" alt="HR Analytics" class="project-logo" />
+          <h3>HR Analytics Dashboard</h3>
+          <p>Data visualization and analytics for HR processes...</p>
+          <button class="btn view-more" data-project="5">View More</button>
+        </div>
+        <!-- Project Card 6 -->
+        <div class="project-card">
+          <img src="assets/images/bilogo1.png" alt="Ecommerce Analytics" class="project-logo" />
+          <h3>Ecommerce Analytics</h3>
+          <p>Analytics dashboard for ecommerce trends and insights...</p>
+          <button class="btn view-more" data-project="6">View More</button>
+        </div>
       </div>
     </div>
   </section>
@@ -160,7 +174,7 @@
   <div id="project-modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <img id="modal-image" src="" alt="Project Image" />
+      <img id="modal-image" src="" alt="Project Screenshot" />
       <h2 id="modal-title"></h2>
       <p id="modal-description"></p>
     </div>
@@ -172,43 +186,38 @@
       <h2>Certificates</h2>
       <div class="certificates-grid">
         <div class="certificate-item">
-          <img src="assets/images/certificates/Complete Machine Learning, NLP Bootcamp_page-0001.jpg" alt="Certificate 1" />
+          <img src="assets/images/certificates/cert1.jpg" alt="Certificate 1" />
         </div>
         <div class="certificate-item">
-          <img src="assets/images/certificates/data science ethics certificate_page-0001.jpg" alt="Certificate 2" />
+          <img src="assets/images/certificates/cert2.jpg" alt="Certificate 2" />
         </div>
         <div class="certificate-item">
-          <img src="assets/images/certificates/infosys data science_page-0001.jpg" alt="Certificate 3" />
+          <img src="assets/images/certificates/cert3.jpg" alt="Certificate 3" />
         </div>
         <div class="certificate-item">
-          <img src="assets/images/certificates/sql_basic certificate_page-0001.jpg" alt="Certificate 4" />
+          <img src="assets/images/certificates/cert4.jpg" alt="Certificate 4" />
         </div>
         <div class="certificate-item">
-          <img src="assets/images/certificates/Udemy Python Certificate_page-0001.jpg" alt="Certificate 5" />
+          <img src="assets/images/certificates/cert5.jpg" alt="Certificate 5" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Section (Big Icons Only) -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <p>kumar.nakul111@gmail.com</p>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/nakkkul" target="_blank" class="social-icon">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nakkkul/" target="_blank" class="social-icon">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
+      <div class="contact-icons">
+        <a href="mailto:kumar.nakul111@gmail.com" target="_blank" class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/nakkkul" target="_blank" class="contact-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nakkkul/" target="_blank" class="contact-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </div>
   </section>

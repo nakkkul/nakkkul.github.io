@@ -1,7 +1,9 @@
-// Toggle navigation menu on mobile
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
+function toggleDetails(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none" || element.style.display === "") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+  

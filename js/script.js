@@ -1,19 +1,24 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+// Project Modals
+const modals = document.querySelectorAll('.view-more');
+const modal = document.getElementById('project-modal');
+const closeBtn = document.querySelector('.close');
+
+modals.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const projectId = btn.dataset.project;
+        // Add logic to populate modal content based on project
+        modal.style.display = 'block';
     });
 });
 
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.background = '#fff';
-        nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
-    } else {
-        nav.style.background = '#fff';
-        nav.style.boxShadow = 'none';
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
     }
 });
+
+// Keep existing JavaScript code

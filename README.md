@@ -52,4 +52,3 @@ Before merging to \`main\`:
 - Phishing Website Detection demo: https://phishing-website-detection-7ae9.onrender.com/
 - Network Security repository: https://github.com/nakkkul/Network_Security
 
-Note: the phishing demo hostname is the URL requested for the portfolio. The Network Security repository README lists another V2 deployment hostname; confirm which Render service is intended for public visitors before making the site the default version.

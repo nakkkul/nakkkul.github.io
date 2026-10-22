@@ -109,7 +109,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 .hero-facts div { display: grid; gap: 3px; }
 .hero-facts strong { font: 800 23px/1.2 var(--font-display); letter-spacing: -.04em; }
 .hero-facts span { max-width: 135px; color: var(--muted); font-size: 11px; line-height: 1.5; }
-.hero-visual { position: relative; justify-self: center; align-self: center; width: min(100%, 250px); padding: 8px; }
+.hero .hero-visual { position: relative; justify-self: center; align-self: center; width: min(100%, 220px); max-width: 220px; padding: 7px; }
 .hero-glow { position: absolute; inset: 5% -5% 8% 10%; border-radius: 45%; background: radial-gradient(ellipse at center, rgba(89,147,250,.20), rgba(32,182,165,.08) 48%, transparent 72%); filter: blur(8px); }
 .portrait-frame { position: relative; padding: 12px; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 28px; box-shadow: var(--shadow); transform: rotate(1.5deg); }
 .portrait-frame::before { content: ""; position: absolute; inset: 12px 12px auto; height: 55%; pointer-events: none; border-radius: 18px 18px 0 0; background: linear-gradient(180deg, rgba(16,29,53,.04), transparent); z-index: 1; }
@@ -281,7 +281,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   .nav-shell { width: calc(100% - 40px); }
   .primary-nav { gap: 15px; }.primary-nav a { font-size: 12px; }
   .hero { grid-template-columns: minmax(0, 1.1fr) minmax(230px, .75fr); column-gap: 28px; padding-block: 68px 62px; }
-  .hero-visual { width: min(100%, 220px); padding: 6px; }
+  .hero .hero-visual { width: min(100%, 190px); max-width: 190px; padding: 5px; }
   .hero h1 { font-size: clamp(40px, 5vw, 56px); }
   .hero-facts { gap: 18px; }
   .project-visual { min-height: 240px; padding: 18px; }
@@ -324,7 +324,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   .hero h1 { max-width: 590px; font-size: clamp(41px, 10vw, 61px); }
   .hero-intro { margin-top: 18px; font-size: 14px; line-height: 1.85; }
   .hero-actions { gap: 10px; margin-top: 22px; }
-  .hero-visual { grid-area: visual; display: block; width: 76px; margin-top: 20px; padding: 2px; align-self: start; justify-self: start; }
+  .hero .hero-visual { grid-area: visual; display: block; width: 64px; max-width: 64px; margin-top: 20px; padding: 2px; align-self: start; justify-self: start; }
   .portrait-frame { padding: 3px; border-radius: 11px; transform: none; box-shadow: 0 6px 16px rgba(20,37,66,.06); }
   .portrait-frame::before { inset: 3px 3px auto; border-radius: 8px 8px 0 0; }
   .portrait-frame img { display: block; aspect-ratio: 4 / 5; border-radius: 7px; object-position: center 25%; }
@@ -371,7 +371,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   .hero .eyebrow { font-size: 9px; letter-spacing: .09em; }
   .nav-shell { width: calc(100% - 28px); }
   .hero { grid-template-columns: 68px minmax(0,1fr); column-gap: 10px; padding-top: 42px; padding-bottom: 36px; }
-  .hero-visual { width: 68px; margin-top: 18px; padding: 2px; }
+  .hero .hero-visual { width: 56px; max-width: 56px; margin-top: 18px; padding: 2px; }
   .portrait-frame { padding: 2px; border-radius: 10px; }
   .portrait-frame::before { inset: 2px 2px auto; }
   .portrait-frame img { border-radius: 7px; }

@@ -1,287 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nakul Kumar - Data Science Portfolio</title>
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="Nakul Kumar's portfolio: practical machine-learning, NLP, and AI-powered applications, including PDF question answering and phishing website classification.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nakul Kumar | Data Science & Machine Learning">
+  <meta property="og:description" content="Python, machine learning, NLP, and AI-powered applications built for practical use.">
+  <meta property="og:url" content="https://nakkkul.github.io/">
+  <title>Nakul Kumar | Data Science & Machine Learning</title>
+  <link rel="icon" href="assets/images/mypic.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Fixed Sidebar Navigation -->
-  <nav>
-    <div class="nav-container">
-      <ul class="nav-links">
-        <li>
-          <a href="#home" data-section="home">
-            <i class="fas fa-home"></i>
-            <span class="nav-text">HOME</span>
-          </a>
-        </li>
-        <li>
-          <a href="#about" data-section="about">
-            <i class="fas fa-user"></i>
-            <span class="nav-text">ABOUT</span>
-          </a>
-        </li>
-        <li>
-          <a href="#tech-stack" data-section="tech-stack">
-            <i class="fas fa-cogs"></i>
-            <span class="nav-text">TECHNICAL STACK</span>
-          </a>
-        </li>
-        <li>
-          <a href="#projects" data-section="projects">
-            <i class="fas fa-briefcase"></i>
-            <span class="nav-text">PROJECTS</span>
-          </a>
-        </li>
-        <li>
-          <a href="#certificates" data-section="certificates">
-            <i class="fas fa-certificate"></i>
-            <span class="nav-text">CERTIFICATES</span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-section="contact">
-            <i class="fas fa-envelope"></i>
-            <span class="nav-text">CONTACT</span>
-          </a>
-        </li>
-      </ul>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Nakul Kumar — home">
+        <span class="brand-mark" aria-hidden="true">NK</span>
+        <span class="brand-name">Nakul Kumar<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- Home Section -->
-  <section id="home" class="home reveal">
-    <div class="container home-content">
-      <div class="home-left">
-        <img src="assets/images/mypic.jpg" alt="Profile Picture" class="home-profile">
-      </div>
-      <div class="home-right">
-        <!-- The name is absolutely centered within .home-right -->
-        <div class="home-name">Nakul Kumar</div>
-        <h1>WELCOME TO MY PORTFOLIO</h1>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about reveal">
-    <div class="container">
-      <h2>ABOUT</h2>
-      <p>
-        I am a data science professional with 3+ years of Python experience, specializing in machine learning, deep learning, and natural language processing. I have built 15+ projects focused on predictive modeling, automation, and optimization to solve real-world challenges. With expertise in NLP, data analysis, and data visualization, I have applied advanced analytical techniques to uncover trends, optimize processes, and improve model performance. Additionally, I have managed and worked on 500+ complex survey projects, collaborating with cross-functional teams to streamline data processes and build efficient solutions. My passion lies in leveraging data science to uncover patterns, improve efficiency, and drive innovation.
-      </p>
-    </div>
-  </section>
-
-  <!-- Tools I Work With Section -->
-  <section id="tools" class="tools reveal">
-    <div class="container">
-      <h2>TOOLS I WORK WITH</h2>
-      <img src="assets/images/tools.jpg" alt="Tools I Work With" class="tools-image" />
-    </div>
-  </section>
-
-  <!-- Technical Stack Section -->
-  <section id="tech-stack" class="tech-stack reveal">
-    <div class="container">
-      <h2>TECHNICAL STACK</h2>
-      <div class="skills-container">
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">Python: Pandas, NumPy, Scikit-learn, TensorFlow</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
+  <main id="main-content">
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="status-dot"></span> DATA SCIENCE · MACHINE LEARNING · AI</p>
+        <h1 id="hero-title">Building useful things with <span>data and AI.</span></h1>
+        <p class="hero-intro">I’m Nakul — a data science professional with experience in survey analytics, an AI/ML internship, and hands-on projects spanning predictive modelling, NLP, and AI-powered applications. I’m currently pursuing an MSc in Data Science and Analytics at IGNOU.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="Nakul%20Kumar.pdf" download="Nakul-Kumar-Resume.pdf">Download résumé <span aria-hidden="true">↓</span></a>
         </div>
-        <!-- Additional skill items follow similarly -->
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">Machine Learning</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">Deep Learning</span>
-            <span class="skill-percent">70%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 70%;"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">Data Analysis</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">Natural Language Processing</span>
-            <span class="skill-percent">70%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 70%;"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">SQL</span>
-            <span class="skill-percent">60%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 60%;"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-text">Tools: Jupyter Notebook, VS Code, MySQL, Git</span>
-            <span class="skill-percent">75%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
-          </div>
+        <div class="hero-facts" aria-label="Quick overview">
+          <div><strong>15+</strong><span>ML and data projects</span></div>
+          <div><strong>500+</strong><span>Survey data systems worked on</span></div>
+          <div><strong>MSc</strong><span>Data Science & Analytics</span></div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-visual" data-reveal>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img src="assets/images/mypic.jpg" alt="Portrait of Nakul Kumar" width="420" height="420" fetchpriority="high">
+          <div class="portrait-caption"><span class="caption-mark" aria-hidden="true">NK</span><span><strong>Nakul Kumar</strong><small>Data Science & Machine Learning</small></span></div>
+        </div>
+        <div class="floating-note note-python"><span class="note-symbol" aria-hidden="true">Py</span><span><strong>Python</strong><small>Data · Models · Apps</small></span></div>
+        <div class="floating-note note-ai"><span class="ai-spark" aria-hidden="true">✳</span><span><strong>Applied AI</strong><small>Built around real use cases</small></span></div>
+      </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects reveal">
-    <div class="container">
-      <h2>PROJECTS</h2>
-      <div class="project-grid">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-          <img src="assets/images/carlogo.jpg" alt="Car Classification" class="project-logo" />
-          <h3>CarBrand Identifier</h3>
-          <p>Deep learning system for vehicle brand recognition...</p>
-          <button class="btn view-more" data-project="1">View More</button>
-        </div>
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <img src="assets/images/resalelogo.png" alt="Resale Prediction" class="project-logo" />
-          <h3>Vehicle Resale Value Prediction</h3>
-          <p>Predicting resale values using machine learning...</p>
-          <button class="btn view-more" data-project="2">View More</button>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="project-card">
-          <img src="assets/images/predictlogo.png" alt="Subscription Prediction" class="project-logo" />
-          <h3>Subscription Renewal Prediction</h3>
-          <p>Forecasting subscription renewals with ML models...</p>
-          <button class="btn view-more" data-project="3">View More</button>
-        </div>
-        <!-- Project Card 4 -->
-        <div class="project-card">
-          <img src="assets/images/nltlogo1.png" alt="NLP Sentiment Analysis" class="project-logo" />
-          <h3>NLP TweetSentiment</h3>
-          <p>Analyzing sentiments from text data using NLP...</p>
-          <button class="btn view-more" data-project="4">View More</button>
-        </div>
-        <!-- Project Card 5 -->
-        <div class="project-card">
-          <img src="assets/images/hrlogo1.jpeg" alt="HR Analytics" class="project-logo" />
-          <h3>HR Analytics</h3>
-          <p>Data visualization and analytics for HR processes...</p>
-          <button class="btn view-more" data-project="5">View More</button>
-        </div>
-        <!-- Project Card 6 -->
-        <div class="project-card">
-          <img src="assets/images/bilogo1.png" alt="Ecommerce Analytics" class="project-logo" />
-          <h3>Ecommerce Analytics</h3>
-          <p>Analytics dashboard for ecommerce trends and insights...</p>
-          <button class="btn view-more" data-project="6">View More</button>
-        </div>
+    <section class="projects section-wrap section-space" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 id="projects-title">Projects that turn ideas into tools.</h2>
+        <p>Two end-to-end applications I’m proud to walk through in a technical discussion.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Project Modal with Fixed Header -->
-  <div id="project-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 id="modal-title"></h2>
-        <span class="close">&times;</span>
-      </div>
-      <div class="modal-body" id="modal-body">
-        <!-- Swapped order: image container comes first, then the text -->
-        <div class="modal-image-container">
-          <img id="modal-image" src="" alt="Project Screenshot" />
-        </div>
-        <div class="modal-text">
-          <p id="modal-description"></p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <div class="featured-grid">
+        <article class="featured-card featured-qna" data-reveal>
+          <div class="project-visual qna-visual" aria-hidden="true">
+            <div class="mini-window">
+              <div class="mini-window-bar"><span></span><span></span><span></span><b>Chat with your PDF</b></div>
+              <div class="qna-preview-layout">
+                <div class="qna-preview-side"><div class="tiny-label">YOUR DOCUMENT</div><div class="tiny-file"><span class="tiny-file-icon">PDF</span><span><b>Program guide.pdf</b><small>66 pages indexed</small></span></div><div class="tiny-side-line"></div><div class="tiny-side-line short"></div></div>
+                <div class="qna-preview-main"><span class="tiny-chip">DOCUMENT Q&A</span><div class="tiny-question">What is the minimum duration?</div><div class="tiny-answer"><span class="tiny-answer-icon">✦</span><div><b>Answer found in your document</b><i class="tiny-line wide"></i><i class="tiny-line"></i><i class="tiny-line medium"></i><small>[Page 6]</small></div></div><div class="tiny-source">⌄ &nbsp; View passages used for this answer</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-meta"><span class="project-index">01 / AI APPLICATION</span><span class="live-indicator"><i></i> Live demo</span></div>
+            <h3>QnA Chatbot V2</h3>
+            <p>A PDF assistant that answers questions in everyday language, summarizes documents, supports follow-ups, and shows the passages behind its answers.</p>
+            <ul class="project-highlights">
+              <li>Hybrid keyword and semantic retrieval with Reciprocal Rank Fusion.</li>
+              <li>Local text embeddings, page-aware chunks, and expandable source evidence.</li>
+              <li>Six automated retrieval regression tests.</li>
+            </ul>
+            <div class="tag-list" aria-label="Technologies used">
+              <span>Python</span><span>Streamlit</span><span>LangChain</span><span>Groq</span><span>FAISS</span><span>Sentence Transformers</span>
+            </div>
+            <div class="project-actions">
+              <a class="button button-primary" href="https://qna-chatbot-nakul.streamlit.app/" target="_blank" rel="noopener noreferrer">Try live demo <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/nakkkul/QnA-Chatbot" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="certificates reveal">
-    <div class="container">
-      <h2>CERTIFICATES</h2>
-      <div class="certificates-grid">
-        <div class="certificate-item">
-          <img src="assets/images/certificates/Complete Machine Learning, NLP Bootcamp_page-0001.jpg" alt="Certificate 1" />
-        </div>
-        <div class="certificate-item">
-          <img src="assets/images/certificates/data science ethics certificate_page-0001.jpg" alt="Certificate 2" />
-        </div>
-        <div class="certificate-item">
-          <img src="assets/images/certificates/sql_basic certificate_page-0001.jpg" alt="Certificate 3" />
-        </div>
-        <div class="certificate-item">
-          <img src="assets/images/certificates/Udemy Python Certificate_page-0001.jpg" alt="Certificate 4" />
-        </div>
+        <article class="featured-card featured-security" data-reveal>
+          <div class="project-visual security-visual" aria-hidden="true">
+            <div class="security-preview">
+              <div class="security-preview-head"><span class="security-shield">✓</span><span><b>Phishing Website Detection</b><small>Batch prediction workflow</small></span><span class="preview-status">READY</span></div>
+              <div class="security-upload"><span class="upload-symbol">↑</span><span><b>sample_prediction.csv</b><small>30 website features · CSV input</small></span><span class="upload-check">✓</span></div>
+              <div class="security-metrics"><div><small>Records analysed</small><strong>120</strong></div><div><small>Prediction classes</small><strong>2 classes</strong></div></div>
+              <div class="prediction-list"><div><span>Record 001</span><b class="class-legit">Legitimate</b></div><div><span>Record 002</span><b class="class-risk">Phishing</b></div><div><span>Record 003</span><b class="class-legit">Legitimate</b></div></div>
+              <div class="download-strip">↓ &nbsp; Download prediction results CSV</div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-meta"><span class="project-index">02 / MACHINE LEARNING</span><span class="live-indicator"><i></i> Live demo</span></div>
+            <h3>Phishing Website Detection</h3>
+            <p>A classification app that evaluates prepared website-feature data, validates uploaded CSV files, and returns downloadable predictions.</p>
+            <ul class="project-highlights">
+              <li>Validates the required 30 input features before inference.</li>
+              <li>Uses a saved preprocessing pipeline and a trained classifier.</li>
+              <li>Includes model-artifact integrity checks, automated tests, and a Docker deployment workflow.</li>
+            </ul>
+            <div class="tag-list" aria-label="Technologies used">
+              <span>Python</span><span>scikit-learn</span><span>pandas</span><span>FastAPI</span><span>Docker</span><span>GitHub Actions</span>
+            </div>
+            <p class="project-note">Note: the demo classifies prepared feature records; it does not scan a website from its URL alone.</p>
+            <div class="project-actions">
+              <a class="button button-primary" href="https://phishing-website-detection-7ae9.onrender.com/" target="_blank" rel="noopener noreferrer">Try live demo <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/nakkkul/Network_Security" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact reveal">
-    <div class="container">
-      <h2>CONTACT</h2>
-      <div class="contact-icons">
-        <a href="mailto:kumar.nakul111@gmail.com" target="_blank" class="contact-icon">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/nakkkul" target="_blank" class="contact-icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nakkkul/" target="_blank" class="contact-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
+    <section class="about-section section-space" id="about" aria-labelledby="about-title">
+      <div class="section-wrap about-grid">
+        <div class="section-heading align-left" data-reveal>
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2 id="about-title">Curious about the problem, careful with the solution.</h2>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p>I build Python-based data science and machine-learning applications, with hands-on work across predictive modelling, deep learning, natural language processing, and AI-powered document question answering.</p>
+          <p>Before moving toward machine learning and AI, I worked in survey analytics and quality assurance. That experience taught me to care about data quality, practical workflows, and whether a solution is useful to the people who rely on it.</p>
+          <p>I later completed an AI/ML internship building and improving ML and Generative AI prototypes. I’m now pursuing an MSc in Data Science and Analytics at IGNOU while continuing to build and document end-to-end projects.</p>
+          <a class="text-link" href="https://www.linkedin.com/in/nakkkul/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="resume-download">
-        <h3>DOWNLOAD MY RESUME HERE</h3>
-        <a href="https://github.com/nakkkul/nakkkul.github.io/blob/main/Nakul%20Kumar.pdf" target="_blank" class="btn resume-btn">
-          Resume <i class="fas fa-arrow-down"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-container">
-      <p>Nakul Kumar<br>Data Scientist</p>
-      <p>© Copyright Nakul K. All Rights Reserved<br>Designed by BootstrapMade</p>
-    </div>
+    <section class="experience section-wrap section-space" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">EXPERIENCE</p>
+        <h2 id="experience-title">Where I’ve worked.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item" data-reveal>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">NOV 2024 — MAY 2025 <span>· GURUGRAM</span></div>
+          <div class="timeline-content">
+            <h3>AI/ML Intern <span>@ Roastify</span></h3>
+            <p>Worked on machine-learning and Generative AI prototypes, using LangChain and Hugging Face as part of the development workflow.</p>
+            <ul><li>Built and tested ML and neural-network models for text-focused tasks, monitoring validation metrics and iterating on model settings.</li><li>Contributed to a prototype workflow that the résumé reports reduced delivery time by 20%.</li></ul>
+          </div>
+        </article>
+        <article class="timeline-item" data-reveal>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">MAR 2022 — NOV 2023 <span>· GURUGRAM</span></div>
+          <div class="timeline-content">
+            <h3>Survey Analyst <span>@ CrownIt (GoldVIP Technology Solutions)</span></h3>
+            <p>Supported survey systems, data quality, and cross-functional analysis in a high-volume analytics environment.</p>
+            <ul><li>Designed and maintained 500+ complex survey data systems.</li><li>Performed quality checks across the survey lifecycle; the résumé reports a 25% reduction in errors.</li><li>Collaborated with teams to analyse survey outcomes and support business decisions.</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section section-space" id="skills" aria-labelledby="skills-title">
+      <div class="section-wrap">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">TOOLS I USE</p>
+          <h2 id="skills-title">A practical, project-led toolkit.</h2>
+          <p>Grouped by how I use them, rather than arbitrary skill percentages.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card" data-reveal><span class="skill-number">01</span><h3>Programming & Data</h3><p>Working with datasets, tabular data, and database queries.</p><div class="tag-list"><span>Python</span><span>pandas</span><span>NumPy</span><span>SQL</span><span>MySQL</span></div></article>
+          <article class="skill-card" data-reveal><span class="skill-number">02</span><h3>Machine Learning</h3><p>Preparing features, training models, comparing results, and evaluating predictions.</p><div class="tag-list"><span>scikit-learn</span><span>TensorFlow / Keras</span><span>Classification</span><span>Regression</span><span>Model evaluation</span></div></article>
+          <article class="skill-card" data-reveal><span class="skill-number">03</span><h3>AI & NLP</h3><p>Building text and document workflows with retrieval and hosted language models.</p><div class="tag-list"><span>LangChain</span><span>Hugging Face</span><span>Groq</span><span>Sentence Transformers</span><span>FAISS</span></div></article>
+          <article class="skill-card" data-reveal><span class="skill-number">04</span><h3>Apps & Engineering</h3><p>Packaging projects into usable interfaces and repeatable deployments.</p><div class="tag-list"><span>Streamlit</span><span>FastAPI</span><span>HTML / CSS</span><span>Git / GitHub</span><span>Docker</span><span>GitHub Actions</span><span>Render</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="other-projects section-wrap section-space" id="more-projects" aria-labelledby="more-projects-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">MORE SELECTED WORK</p>
+        <h2 id="more-projects-title">A few more things I’ve built.</h2>
+      </div>
+      <div class="other-project-grid">
+        <article class="small-project-card" data-reveal><div class="small-project-icon icon-subscription" aria-hidden="true">↗</div><div class="small-project-type">PREDICTIVE MODELLING</div><h3>Customer Subscription Prediction</h3><p>Classification model that estimates customer subscription outcomes from structured input data.</p><div class="small-project-metric"><strong>90.3%</strong><span>reported test accuracy</span><strong>0.93</strong><span>ROC AUC</span></div><div class="small-project-links"><a href="https://customer-subscription-prediction-app.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/nakkkul/Customer-Subscription-Prediction-App" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+        <article class="small-project-card" data-reveal><div class="small-project-icon icon-car" aria-hidden="true">⌁</div><div class="small-project-type">COMPUTER VISION</div><h3>AutoBrand Identifier</h3><p>A convolutional neural network that classifies a vehicle brand from an uploaded image.</p><div class="small-project-metric"><strong>93%</strong><span>reported validation accuracy</span></div><div class="small-project-links"><a href="https://car-brand-classification.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/nakkkul/Car-Brand-Classification-System" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+        <article class="small-project-card" data-reveal><div class="small-project-icon icon-nlp" aria-hidden="true">Aa</div><div class="small-project-type">NATURAL LANGUAGE PROCESSING</div><h3>TweetSentiment</h3><p>Compares text representations and traditional ML models for positive, negative, and neutral tweet sentiment.</p><div class="small-project-metric"><strong>77.13%</strong><span>best reported TF-IDF baseline accuracy</span></div><div class="small-project-links"><a href="https://github.com/nakkkul/NLP-TweetSentiment" target="_blank" rel="noopener noreferrer">View repository ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="education section-space" id="education" aria-labelledby="education-title">
+      <div class="section-wrap">
+        <div class="section-heading align-left" data-reveal>
+          <p class="eyebrow">EDUCATION & LEARNING</p>
+          <h2 id="education-title">Building the foundations.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card" data-reveal><span class="education-icon" aria-hidden="true">MSc</span><div><div class="education-date">JAN 2026 — PRESENT</div><h3>Master of Science — Data Science and Analytics</h3><p>Indira Gandhi National Open University (IGNOU)</p><span class="education-status">Currently pursuing</span></div></article>
+          <article class="education-card" data-reveal><span class="education-icon" aria-hidden="true">BCA</span><div><div class="education-date">2018 — 2021</div><h3>Bachelor of Computer Applications</h3><p>Panjab University, Chandigarh</p></div></article>
+        </div>
+        <div class="certifications-block" data-reveal>
+          <h3>Selected certificates</h3>
+          <p class="cert-intro">A few examples of structured learning alongside project work.</p>
+          <div class="certificate-grid">
+            <a class="certificate-card" href="assets/images/certificates/Complete%20Machine%20Learning%2C%20NLP%20Bootcamp_page-0001.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/images/certificates/Complete%20Machine%20Learning%2C%20NLP%20Bootcamp_page-0001.jpg" alt="Certificate for Complete Machine Learning and NLP Bootcamp" loading="lazy" decoding="async"><span>Machine Learning & NLP Bootcamp <b aria-hidden="true">↗</b></span></a>
+            <a class="certificate-card" href="assets/images/certificates/Udemy%20Python%20Certificate_page-0001.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/images/certificates/Udemy%20Python%20Certificate_page-0001.jpg" alt="Python bootcamp certificate" loading="lazy" decoding="async"><span>Python Bootcamp <b aria-hidden="true">↗</b></span></a>
+            <a class="certificate-card" href="assets/images/certificates/data%20science%20ethics%20certificate_page-0001.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/images/certificates/data%20science%20ethics%20certificate_page-0001.jpg" alt="Data Science Ethics course certificate from the University of Michigan" loading="lazy" decoding="async"><span>Data Science Ethics <b aria-hidden="true">↗</b></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap section-space" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel" data-reveal>
+        <div class="contact-copy"><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-title">Have a project or role in mind?</h2><p>I’m interested in data science, machine learning, NLP, and Python-based application opportunities.</p></div>
+        <div class="contact-actions"><a class="button button-light" href="mailto:kumar.nakul111@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="contact-social" href="https://www.linkedin.com/in/nakkkul/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="contact-social" href="https://github.com/nakkkul" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+        <div class="contact-resume"><span>Prefer a quick overview?</span><a href="Nakul%20Kumar.pdf" download="Nakul-Kumar-Resume.pdf">Download my résumé ↓</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">NK</span><span class="brand-name">Nakul Kumar<span class="brand-dot">.</span></span></a><p>Built with HTML, CSS & JavaScript.</p><p>© <span id="current-year">2026</span> Nakul Kumar</p><a href="#home" class="back-top">Back to top ↑</a></div>
   </footer>
-
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>

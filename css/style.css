@@ -309,6 +309,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   .primary-nav {
     position: absolute; top: calc(100% + 1px); left: 0; right: 0;
     display: none; align-items: stretch; gap: 0; padding: 9px 18px 18px;
+    max-height: calc(100vh - 69px); max-height: calc(100dvh - 69px); overflow-y: auto; overscroll-behavior: contain;
     background: rgba(255,255,255,.99); border-bottom: 1px solid var(--line); box-shadow: 0 16px 22px rgba(20,37,66,.07);
   }
   .primary-nav.is-open { display: flex; flex-direction: column; }
